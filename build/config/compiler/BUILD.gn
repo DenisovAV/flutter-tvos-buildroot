@@ -690,7 +690,12 @@ if (is_win) {
     # When compiling Objective-C, warns if a method is used whose
     # availability is newer than the deployment target. This is not
     # required when compiling Chrome for iOS.
-    default_warning_flags += [ "-Wunguarded-availability" ]
+    default_warning_flags += [ 
+        "-Wunguarded-availability",
+        "-Wno-unused-but-set-variable",
+        "-Wno-deprecated-non-prototype",
+        "-Wno-unqualified-std-cast-call", 
+    ]
   }
 
   if (allow_deprecated_api_calls) {
