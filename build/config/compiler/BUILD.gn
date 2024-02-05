@@ -696,7 +696,8 @@ if (is_win) {
         "-Wunguarded-availability",
         "-Wno-unused-but-set-variable",
         "-Wno-deprecated-non-prototype",
-        "-Wno-unqualified-std-cast-call", 
+        "-Wno-unqualified-std-cast-call",
+        "-Wno-unused-variable", 
     ]
   }
 
